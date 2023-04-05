@@ -5,35 +5,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OrderUp Website</title>
     <link rel ="stylesheet" href="website_style.css">
+    <script src="https://kit.fontawesome.com/502eea43c6.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+  <section class="header">
     <nav>
-        <ul id="nav_bar">
-            <li class="nav-links" id="gmail"><a href="#">Sign Up</a></li>
-            <li class="nav-links"><a href="#">Login</a></li>
+      <a href="website.html"><img src="images/logo(Label).png" alt=""></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT US</a></li>
+          <li><a href="">CONTACT US</a></li>
         </ul>
-      </nav>  
-       
-      <div class="search_box">  
-        <input type="text" id="form-search" placeholder="Enter Delivery Address">
-      </div> 
-    
-      <div class="buttons">
-        <button>Find Food</button>
-        <button>Find Discounts</button>
       </div>
+    </nav> 
+
+    <div class="text-box">
+      <h2>Freshly Delivered Food <br> Anywhere, Anytime!</h2>
+    </div>
+
+    <div class="search_box">  
+      <input type="text" id="form-search" placeholder="Enter Delivery Address" style="color: #ffa500;">
+    </div> 
+
+  </section>
+
+       
+      
+
+      <div class="center">
+        <button id="show-login">Login</button>
+      </div>
+      <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+          <h2>Log in</h2>
+          <div class="form-element">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter Email">
+          </div>
+          <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password">
+          </div>
+          <div class="form-element">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+          </div>
+          <div class="form-element">
+            <button>Sign in</button>
+          </div>
+          <div class="form-element">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+      </div>
+
+
+      <section class="what-we-offer">
+        <h1>Explore Our Favourites</h1>
+        <p> Use our filters to adjust for your personal preferences</p>
+      </section>
+
+
+<section id="slider">
+  <div class="carousel" data-carousel>
+    <div class="carousel__filters">
+      <button class="carousel__filter active" data-filter="all">All</button>
+      <button class="carousel__filter" data-filter="meat">Meat</button>
+      <button class="carousel__filter" data-filter="seafood">Seafood</button>
+      <button class="carousel__filter" data-filter="vegan">Vegan</button>
+    </div>
+    <button class="carousel__button carousel__button--prev" data-carousel-button="prev">&#8678;</button>
+   <div class="carousel__track-container">
+    <ul class="carousel__track" data-slides>
+      <li class="carousel__slide" data-active data-filter="meat">
+      <img class="carousel__img" src="https://i.ibb.co/phv96k5/eiliv-aceron-u-Bigm8w-Mp-A-unsplash.jpg" alt="food 1">
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide" data-filter="meat">
+      <img class="carousel__img" src="https://i.ibb.co/3cZ6R35/chad-montano-GFCYho-Re48-unsplash.jpg" alt="food 2">
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide" data-filter="vegan">
+      <img class="carousel__img" src="https://i.ibb.co/TtQNX1G/eiliv-aceron-Zu-IDLSz3-XLg-unsplash.jpg" alt="food 3">
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide" data-filter="vegan">
+      <img class="carousel__img" src="https://i.ibb.co/hVhjs9t/ella-olsson-yb6bm-66-Jdk-unsplash.jpg" alt="food 4">
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide">
+      <img class="carousel__img" src="https://i.ibb.co/YDwKFVB/joseph-gonzalez-fdl-ZBWIP0a-M-unsplash.jpg" alt="food 5">
+  
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide" data-filter="seafood">
+      <img class="carousel__img" src="https://i.ibb.co/qdzwk9n/carissa-gan-KSXvrq-KUxnc-unsplash.jpg" alt="food 6">
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide" data-filter="vegan">
+      <img class="carousel__img" src="https://i.ibb.co/D5YML6T/eaters-collective-12e-HC6-Fx-Pyg-unsplash.jpg" alt="food 7">
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide" data-filter="meat">
+      <img class="carousel__img" src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="food 8">
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide" data-filter="meat">
+      <img class="carousel__img" src="https://i.ibb.co/r0P9rtH/chad-montano-Mq-T0asuo-Ic-U-unsplash.jpg" alt="food 9">
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide" data-filter="vegan">
+      <img class="carousel__img" src="https://images.unsplash.com/photo-1539252554453-80ab65ce3586?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="food 10">
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide" data-filter="meat">
+      <img class="carousel__img" src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="food 11">
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide" data-filter="vegan">
+      <img class="carousel__img" src="https://images.unsplash.com/photo-1484325881845-65073528922e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" alt="food 12">
+      <div class="img__desc">
+        <h3>buz burger's</h3>
+        <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+        </div>
+    </li>
+    <li class="carousel__slide" data-filter="seafood"> 
+    <img class="carousel__img" src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="food 13">
+    <div class="img__desc">
+      <h3>buz burger's</h3>
+      <p>buz burger's are serving fresh and unique burgers <br> 20 mins delivery!</p>
+      </div>
+    </li>
+  </ul>
+</div>
+  <button class="carousel__button carousel__button--next" data-carousel-button="next">&#8680;</button>
+
+  <div class="carousel__nav">
+    <button class="carousel__indicator current-slide"></button>
+    <button class="carousel__indicator"></button>
+    <button class="carousel__indicator"></button>
+  </div>
+</div>
+</section>
+
       <footer>
         <ul>
-          <li><a href="#">Advertising</a></li>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">About</a></li> 
+        <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffa500;"></i>
+        <i class="fa-brands fa-square-twitter fa-2xl" style="color:#ffa500;"></i>
+        <i class="fa-brands fa-square-facebook fa-2xl" style="color:#ffa500;"></i>
+          <li><a href="#" style="color: #000080;">Advertising</a></li>
+          <li><a href="#" style="color: #000080;">Business</a></li>
+          <li><a href="#" style="color: #000080;">About</a></li> 
         </ul>
-        <ul>    
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Settings</a></li>
+        <ul> 
+          <li><a href="#" style="color: #000080;">Terms</a></li>
+          <li><a href="#" style="color: #000080;">Settings</a></li>
         </ul>       
     </footer> 
-     
+    <script src="website.js"></script> 
 </body>
 </html>
